@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionaryQ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="section upload-section">
+      <h1>Upload Video</h1>
+      <input type="file" id="videoUpload" accept="video/*" />
+      <div id="videoStatus">No video uploaded yet.</div>
+    </div>
+    <div class="section chat-section" id="chatSection">
+      <h1>VisionaryQ</h1>
+      <div class="chat-window" id="chatWindow"></div>
+      <div class="chat-controls">
+        <input type="text" id="userInput" placeholder="Type your question..." />
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
